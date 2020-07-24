@@ -1,0 +1,42 @@
+mat-card {
+  height: 200px;
+  width: 140px;
+
+}
+.mat {
+  margin-top: 300px;
+  margin-left: 200px;
+ 
+  .mat-confirmed:active{
+    background-color: red;
+  }
+
+  .confirmed {
+    color: red;
+  }
+  .mat-confirmed:hover {
+    background-color: lighten($color: red, $amount: 45);
+  }
+
+  .active {
+    color: blue;
+  }
+  .mat-active:hover {
+    background-color: lighten($color: blue, $amount: 45);
+  }
+  .recovered {
+    color: green;
+  }
+  .mat-recovered:hover {
+    background-color: lighten($color: green, $amount: 60);
+  }
+  .deceased {
+    color: gray;
+  }
+  .mat-deceased:hover {
+    background-color: lighten($color: gray, $amount: 45);
+  }
+}
+mat-card-title {
+  font-size: 50;
+}

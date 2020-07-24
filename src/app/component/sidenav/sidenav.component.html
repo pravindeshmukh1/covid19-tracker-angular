@@ -1,1 +1,37 @@
-<p>Covid19-tracker</p>
+<mat-sidenav-container fullscreen fxFlexAlign="start">
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    [ngStyle]="{ 'width.em': sidenavWidth }"
+    opened="true"
+    (mouseenter)="increase()"
+    (mouseleave)="decrease()"
+    fxLayout="column"
+    fxLayoutAlign="space-around center"
+  >
+    <mat-nav-list>
+      <mat-list-item>
+        <h5 class="title">COVID-19 INDIA</h5>
+      </mat-list-item>
+      <mat-list-item routerLink="/home" routerLinkActive="home">
+        <mat-icon mat-list-icon>home</mat-icon> 
+        <div *ngIf="sidenavWidth > 8" class="sidenav-item">Home</div>
+      </mat-list-item>
+      <mat-list-item routerLink="1" routerLinkActive="active">
+        <mat-icon mat-list-icon>book</mat-icon> 
+        <div *ngIf="sidenavWidth > 8" class="sidenav-item">Blog</div>
+      </mat-list-item>
+
+      <mat-list-item routerLink="2" routerLinkActive="active">
+        <mat-icon mat-list-icon>settings</mat-icon>
+        <div *ngIf="sidenavWidth > 8" class="sidenav-item">Services</div>
+      </mat-list-item>
+
+      <mat-list-item routerLink="3" routerLinkActive="active">
+        <mat-icon mat-list-icon>local_phone</mat-icon>
+        <div *ngIf="sidenavWidth > 8" class="sidenav-item">Contact</div>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

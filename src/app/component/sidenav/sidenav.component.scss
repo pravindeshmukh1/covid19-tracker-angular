@@ -1,0 +1,21 @@
+$bgColor: gray;
+$title-color: red;
+$text-item: gray;
+mat-sidenav {
+  background-color: lighten($color: gray, $amount: 45);
+  mat-list-item {
+    margin-top: 2em;
+  }
+  mat-icon {
+    margin-right: 3em;
+    margin-left: 1em;
+  }
+  .title {
+    margin-top: 2em;
+    margin-left: 2em;
+    color: $title-color;
+  }
+  .sidenav-item {
+    color: $text-item;
+  }
+}

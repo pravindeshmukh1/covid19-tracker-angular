@@ -130,5 +130,10 @@
   "defaultProject": "covid19-tracker-angular",
   "cli": {
     "analytics": "3161538d-68ed-48b1-a713-261c6d61ff36"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
   }
 }
