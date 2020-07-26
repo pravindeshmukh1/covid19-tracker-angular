@@ -1,0 +1,19 @@
+@import "../scss/variables.scss";
+
+ @mixin StateCountTable {
+  width: 80px;
+  text-align: right;
+  margin: 1px;
+  border-radius: 4px;
+  border-color: $bgColor;
+  padding: 12px;
+  background-color: $bgColorlight;
+}
+@mixin stateTable {
+  width: 150px;
+  background-color: $bgColor;
+  border-radius: 4px;
+  border-color: $bgColor;
+  text-align: start;
+  padding: 12px;
+}
