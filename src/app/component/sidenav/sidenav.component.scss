@@ -1,8 +1,8 @@
-$bgColor: gray;
+@import "../../scss//variables.scss";
 $title-color: red;
-$text-item: gray;
+
 mat-sidenav {
-  background-color: lighten($color: gray, $amount: 45);
+  background-color: lighten($color: $color, $amount: 45);
   mat-list-item {
     margin-top: 2em;
   }
@@ -16,6 +16,9 @@ mat-sidenav {
     color: $title-color;
   }
   .sidenav-item {
-    color: $text-item;
+    color: $color;
   }
+}
+mat-sidenav-container {
+  background-color: white;
 }
