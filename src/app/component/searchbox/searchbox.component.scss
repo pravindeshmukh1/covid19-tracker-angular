@@ -1,0 +1,27 @@
+@import "../../scss/variables.scss";
+input {
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  outline: none;
+  padding: 6px 25px;
+  margin-top: 40px;
+  margin-left: 200px;
+  width: 550px;
+  height: 70px;
+  font-size: 15px;
+  border-radius: 5px;
+  opacity: 60%;
+  -webkit-box-shadow: -1px 7px 32px -11px rgba(135, 130, 135, 1);
+  -moz-box-shadow: -1px 7px 32px -11px rgba(135, 130, 135, 1);
+  box-shadow: -1px 7px 32px -11px rgba(135, 130, 135, 1);
+}
+.title {
+  margin-top: 100px;
+  margin-left: 400px;
+  color: $color;
+}
+.time{
+  margin-top: 30px;
+  margin-left: 400px;
+  color: $color;
+  font-size: 13px;
+}

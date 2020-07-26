@@ -12,26 +12,13 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [],
-  imports: [
-    // CommonModule,
-    // BrowserModule,
-    // BrowserAnimationsModule,
-    // MatToolbarModule,
-    // FlexLayoutModule,
-    // MatMenuModule,
-    // MatTooltipModule,
-    // MatSidenavModule,
-    // MatListModule,
-    // TextFieldModule,
-    // MatSelectModule,
-    // MatIconModule,
-    // MatCardModule
-  ],
+  imports: [],
   exports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -44,7 +31,9 @@ import {MatCardModule} from '@angular/material/card';
     TextFieldModule,
     MatSelectModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
   ],
 })
 export class MaterialModule {}
