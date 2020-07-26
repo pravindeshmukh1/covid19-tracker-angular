@@ -1,26 +1,8 @@
-<div class="mat" fxLayout="row" fxLayoutAlign="start center">
-  <mat-card class="mat-confirmed" :active>
-    <mat-card-header fxLayout="row" fxLayoutAlign="center center">
-      <mat-card-subtitle class="confirmed">Confirmed</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content></mat-card-content>
-  </mat-card>
-  <mat-card class="mat-active">
-    <mat-card-header fxLayout="row" fxLayoutAlign="center center">
-      <mat-card-subtitle class="active">Active</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content> </mat-card-content>
-  </mat-card>
-  <mat-card class="mat-recovered">
-    <mat-card-header fxLayout="row" fxLayoutAlign="center center">
-      <mat-card-subtitle class="recovered">Recovered</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content> </mat-card-content>
-  </mat-card>
-  <mat-card class="mat-deceased">
-    <mat-card-header fxLayout="column" fxLayoutAlign="center center">
-      <mat-card-subtitle class="deceased">Deceased</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content> </mat-card-content>
-  </mat-card>
+<app-searchbox></app-searchbox>
+<div fxLayout="row" fxLayoutAlign="start center" class="totalCount">
+  <div class="confirmed">Confirmed</div>
+  <div class="active">Active</div>
+  <div class="recovered">Recovered</div>
+  <div class="deceased">Deceased</div>
 </div>
+<app-statecount></app-statecount>
