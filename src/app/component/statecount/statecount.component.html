@@ -1,0 +1,30 @@
+<div fxLayout="row" fxLayoutAlign="start center" class="state-title">
+  <div mat-stroked-button class="state">State/UT</div>
+  <div mat-stroked-button class="confirmed">Confirned</div>
+  <div mat-stroked-button class="active">Active</div>
+  <div mat-stroked-button class="recovered">Recovered</div>
+  <div mat-stroked-button class="deceased">Deceased</div>
+</div>
+
+<div
+  fxLayout="row"
+  fxLayoutAlign="start center"
+  class="state-count"
+  *ngFor="let state of totalState"
+>
+  <div mat-stroked-button class="state">
+    {{ state.stateName }}
+  </div>
+  <div mat-stroked-button class="confirmed">
+    {{ state.total }}
+  </div>
+  <div mat-stroked-button class="active">
+    {{ state.active }}
+  </div>
+  <div mat-stroked-button class="recovered">
+    {{ state.death }}
+  </div>
+  <div mat-stroked-button class="deceased">
+    {{ state.recover }}
+  </div>
+</div>

@@ -1,0 +1,70 @@
+$bgColor1: lighten(
+  $color: gray,
+  $amount: 45,
+);
+$bgColor: rgb(236, 236, 236);
+$listHover: lighten(
+  $color: gray,
+  $amount: 45,
+);
+@mixin StateCountTable {
+  width: 80px;
+  text-align: right;
+  margin: 1px;
+  border-radius: 4px;
+  border-color: $bgColor;
+  padding: 12px;
+  background-color: $bgColor1;
+}
+@mixin stateTable {
+  width: 150px;
+  background-color: $bgColor;
+  border-radius: 4px;
+  border-color: $bgColor;
+  text-align: start;
+  padding: 12px;
+}
+
+.state-title {
+  margin-left: 200px;
+  margin-top: 20px;
+
+  .state {
+    @include stateTable;
+  }
+  .confirmed,
+  .active,
+  .recovered,
+  .deceased {
+    @include StateCountTable;
+    background-color: $bgColor;
+  }
+}
+
+.state-count {
+  margin-left: 200px;
+  margin-top: 2px;
+  .state {
+    @include stateTable;
+  }
+  .confirmed,
+  .active,
+  .recovered,
+  .deceased {
+    @include StateCountTable;
+    opacity: 80%;
+
+  }
+}
+:hover ~ .confirmed {
+  background-color: $bgColor;
+}
+:hover ~ .active {
+  background-color: $bgColor;
+}
+:hover ~ .recovered {
+  background-color: $bgColor;
+}
+:hover ~ .deceased {
+  background-color: $bgColor;
+}
