@@ -11,25 +11,35 @@
   >
     <mat-nav-list>
       <mat-list-item>
-        <h5 class="title">COVID-19 INDIA</h5>
+        <h5 class="title">COVID 19 INDIA</h5>
       </mat-list-item>
       <mat-list-item routerLink="/home" routerLinkActive="home">
-        <mat-icon mat-list-icon>home</mat-icon> 
+        <mat-icon mat-list-icon
+          ><img src="../../../assets/icons/home.svg"
+        /></mat-icon>
         <div *ngIf="sidenavWidth > 8" class="sidenav-item">Home</div>
       </mat-list-item>
       <mat-list-item routerLink="1" routerLinkActive="active">
-        <mat-icon mat-list-icon>book</mat-icon> 
+        <mat-icon mat-list-icon
+          ><img src="../../../assets/icons/blog.svg"
+        /></mat-icon>
         <div *ngIf="sidenavWidth > 8" class="sidenav-item">Blog</div>
       </mat-list-item>
 
       <mat-list-item routerLink="2" routerLinkActive="active">
-        <mat-icon mat-list-icon>settings</mat-icon>
-        <div *ngIf="sidenavWidth > 8" class="sidenav-item">Services</div>
+        <mat-icon mat-list-icon
+          ><img src="../../../assets/icons/about.svg"
+        /></mat-icon>
+        <div *ngIf="sidenavWidth > 8" class="sidenav-item">About</div>
       </mat-list-item>
 
       <mat-list-item routerLink="3" routerLinkActive="active">
-        <mat-icon mat-list-icon>local_phone</mat-icon>
-        <div *ngIf="sidenavWidth > 8" class="sidenav-item">Contact</div>
+        <mat-icon mat-list-icon
+          ><img src="../../../assets/icons/brightness.svg"
+        /></mat-icon>
+        <div *ngIf="sidenavWidth > 8" class="sidenav-item">
+          A crowdsourced initiative.
+        </div>
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>

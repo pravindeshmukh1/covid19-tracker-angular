@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CovidcountService } from 'src/app/services/covidcount.service/covidcount.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { emit } from 'process';
 
 @Component({
   selector: 'app-statecount',

@@ -13,11 +13,9 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
   }
   increase() {
-    this.sidenavWidth = 18;
-    console.log('increase sidenav width');
+    this.sidenavWidth = 22;
   }
   decrease() {
     this.sidenavWidth = 8;
-    console.log('decrease sidenav width');
   }
 }

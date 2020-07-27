@@ -1,24 +1,24 @@
 @import "../../scss//variables.scss";
 $title-color: red;
 
-mat-sidenav {
-  background-color: lighten($color: $color, $amount: 45);
-  mat-list-item {
-    margin-top: 2em;
-  }
-  mat-icon {
-    margin-right: 3em;
-    margin-left: 1em;
-  }
-  .title {
-    margin-top: 2em;
-    margin-left: 2em;
-    color: $title-color;
-  }
-  .sidenav-item {
-    color: $color;
-  }
-}
 mat-sidenav-container {
   background-color: white;
+  mat-sidenav {
+    background-color: lighten($color: $color, $amount: 45);
+    mat-list-item {
+      margin-top: 2em;
+    }
+    mat-icon {
+      margin-right: 3em;
+      margin-left: 1em;
+    }
+    .title {
+      margin-left: 2em;
+      color: $title-color;
+    }
+    .sidenav-item {
+      color: $color;
+      font-weight: 500;
+    }
+  }
 }
