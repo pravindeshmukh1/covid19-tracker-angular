@@ -37,4 +37,8 @@
   .deceased:hover {
     background-color: lighten($color: gray, $amount: 45);
   }
+  .count {
+    margin-top: 50px;
+    font-size: 23px;
+  }
 }

@@ -4,16 +4,16 @@
   width: 80px;
   text-align: right;
   margin: 1px;
-  border-radius: 4px;
+  border-radius: 5px;
   border-color: $bgColor;
-  padding: 12px;
+  padding: 10px;
   background-color: $bgColorlight;
 }
-@mixin stateTable {
+@mixin StateTable {
   width: 150px;
   background-color: $bgColor;
-  border-radius: 4px;
+  border-radius: 5px;
   border-color: $bgColor;
   text-align: start;
-  padding: 12px;
+  padding: 10px;
 }
