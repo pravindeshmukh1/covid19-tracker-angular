@@ -11,6 +11,8 @@ import { MaterialModule } from './material.module';
 import { TotalcountComponent } from './component/totalcount/totalcount.component';
 import { StatecountComponent } from './component/statecount/statecount.component';
 import { SearchboxComponent } from './component/searchbox/searchbox.component';
+import { MapComponent } from './component/map/map.component';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,9 @@ import { SearchboxComponent } from './component/searchbox/searchbox.component';
     TotalcountComponent,
     StatecountComponent,
     SearchboxComponent,
+    SidenavComponent,
+    MapComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
