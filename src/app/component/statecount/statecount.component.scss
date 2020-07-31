@@ -3,10 +3,11 @@
 
 .state-title {
   margin-left: 200px;
-  margin-top: 20px;
+  margin-top: 50px;
 
   .state {
-    @include stateTable;
+    @include StateTable;
+    
   }
   .confirmed,
   .active,
@@ -21,15 +22,13 @@
   margin-left: 200px;
   margin-top: 2px;
   .state {
-    @include stateTable;
+    @include StateTable;
   }
   .confirmed,
   .active,
   .recovered,
   .deceased {
     @include StateCountTable;
-    opacity: 80%;
-
   }
 }
 :hover ~ .confirmed {

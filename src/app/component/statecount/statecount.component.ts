@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CovidcountService } from 'src/app/services/covidcount.service/covidcount.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
