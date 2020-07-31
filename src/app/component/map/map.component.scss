@@ -1,0 +1,19 @@
+svg {
+  fill: white;
+  stroke: gray;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+path:hover {
+  fill: gray;
+  stroke: green;
+}
+.totalCase {
+  margin-top: 300px;
+  margin-left: 200px;
+  fill: white;
+  stroke: gray;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
